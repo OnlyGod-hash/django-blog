@@ -1,0 +1,15 @@
+{% extends 'dram/base.html' %} {% load crispy_forms_tags %} {% block content %}
+
+
+
+<div class="shadow p-3 mb-5 bg-white rounded">
+    <div class="media">
+        <img src="{{user.profile.image.url}}" class="mg-thumbnail img-rounded" alt="..." width="75">
+        <div class="media-body">
+            <h2 class="ml-3">{{ user.username }}</h2>
+            <p class="ml-3">{{ user.email }} </p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
